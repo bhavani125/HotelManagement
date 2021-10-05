@@ -1,14 +1,16 @@
 class Orders {
+  userkey;
   item;
   quantity;
   price;
-  amount;
+  totalAmount;
 
-  constructor(item, quantity, price, amount) {
+  constructor(userkey, item, quantity, price, totalAmount) {
+    this.userkey = userkey;
     this.item = item;
     this.quantity = quantity;
     this.price = price;
-    this.amount = amount;
+    this.totalAmount = totalAmount;
   }
 }
-exports.Orders=Orders;
+module.exports = Orders;
